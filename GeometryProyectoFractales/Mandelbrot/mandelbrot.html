@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mandelbrot</title>
+
+    <script src="mandelbrot.js"></script>
+    
+
+    <link rel="stylesheet" href="../FractalTree/styleFractal.css">
+</head>
+
+<body>
+
+    <header class="tope">
+        <div>
+            <h1 class="titulo" id="titulo1">Fractales la Geometría del Caos</h1>
+            <h3 class="titulo" id="titulo2">Mandelbrot</h3>
+        </div>
+        <nav>
+            <p><a href="../Index/galeria.html">Inicio</a></p>
+            <p><a href="../FractalTree/tree.html">Fractales en la naturaleza</a></p>
+        </nav>
+
+    </header>
+
+<div id="texto">
+    <div>
+        <h2>Fractal de Mandelbrot</h2>
+    </div>
+    <p>El matemático Benoît Mandelbrot, uno de los creadores de la geometría fractal, y el principal protagonista del auge y expansión de esta geometría y de su popularización, nos dice en su libro Introducción a la geometría fractal de la Naturaleza:
+        <br><br>
+        Un fractal es un objeto geométrico en el que se repite el mismo patrón a diferentes escalas y con 
+        diferente orientación; las curvas fractales pueden serpentear tanto dentro de un plano que casi llegan 
+        a rellenar las dos dimensiones del plano. 
+
+        <br>
+        El conjunto de Mandelbrot es un fractal creado mediante lautilización de números complejos.
+        <br>
+        asignamos el color negro a los puntos c que dan lugares a sucesiones acotadas y otros colores a los demás puntos, según lo rápido que tiendan al infinito, la representación obtenida para el conjunto de Mandelbrot
+    </p>
+    
+    <div class="descripcion">
+        <p>Una de las cosas más asombrosas sobre el conjunto de Mandelbrot es que, en teoría, si se deja solo, continuaría creando patrones infinitamente nuevos a partir de la estructura original, lo que demostraría que algo podría ampliarse para siempre.</p>
+    </div>
+    <div class="descripcion">
+        <p>“Las nubes no son esferas, las montañas no son conos, las costas no son círculos, las cortezas de los árboles no son lisas y los relámpagos no se desplazan en línea recta…”
+        </p>
+    </div>
+    
+    
+</div>
+
+
+    <div id="caja">
+
+        <div id="canvaHijo">
+            
+            <button type="button" id="GenerarFractal" onclick="mostrarMandelbrot()">Generar Fractal Mandelbrot</button>
+            <div class="imagen">
+                <img src="./manderImage.png">
+            </div>
+            <div id="lienzoMandel" class="lienzoOculto">
+                <div id="controles">
+                    <button type="button" id="Eliminar" onclick="cambiarClase('lienzoMandel','lienzoOculto')">Cerrar Mandelbrot</button>
+                </div>
+                <canvas id="myCanvas" width="800" height="800"></canvas>
+            </div> <!-- termina el espacio del arbol -->
+
+            
+        </div> <!--termina canvaHijo-->
+
+        
+
+        
+    </div>
+
+    
+
+
+
+</body>
+
+</html>
